@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('/App Development/Image/App-Development.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.glass-box {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  max-width: 900px;
+  width: 100%;
+  gap: 30px;
+  color: #fff;
+}
+
+.text-section {
+  flex: 1;
+  min-width: 280px;
+}
+
+.text-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.text-section button {
+  padding: 10px 20px;
+  background-color: #00f7ff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.text-section button:hover {
+  background-color: #00d2e2;
+}
+
+.img-section {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-section img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+}

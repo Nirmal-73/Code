@@ -1,0 +1,175 @@
+
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ========== Header & Navigation ========== */
+    header {
+      background-color: #1e1e1e;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      position: relative;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #333;
+      border-radius: 4px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      color: #fff;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #1e1e1e;
+        width: 100%;
+        text-align: right;
+        padding: 20px;
+        z-index: 1000;
+      }
+
+      nav.active {
+        display: block;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    /* ========== Hero Section ========== */
+    .hero {
+  background: url('/Images/photo.jpg') no-repeat center center/cover;
+  color: #fff;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+    .hero h2 {
+      font-size: 2rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* ========== About, Services, Why ========== */
+    section {
+      padding: 40px 20px;
+    }
+
+    .service-boxes {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .box a {
+      text-decoration: none;
+      color: #000000;
+    }
+    .box {
+      flex: 1 1 30%;
+      background: #f0f0f0;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .box {
+        flex: 1 1 100%;
+      }
+    }
+
+    /* ========== Contact Section ========== */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    /* ========== Footer ========== */
+    footer {
+      background-color: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>We9 Technologies</title>
+  <link href="/Images/image.png" rel="icon">
+  <!--========== Basic Reset and Styling ==========-->
+  <link rel="stylesheet" href="style.css" />
+ 
+</head>
+<body>
+
+  <!-- Header with Responsive Nav -->
+  <header>
+    <div class="container nav">
+      <a href="#"><img class="logo" src="/Images/image.png" alt="Logo"></a>
+
+      <!-- Hamburger Icon -->
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+
+      <nav id="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#Login" onclick="window.location.href = '/login/login.html';">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h2>We9 Design Digital Experiences</h2>
+      <p>Your Trusted Partner in Web & App Development</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We9 Technologies is a team of creative developers and designers delivering digital solutions to global clients.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-boxes">
+        <div class="box">
+          <img src="/Images/Web Design.png" alt="">
+          <h3><a href="#Login" onclick="window.location.href = '/Web Development/Web development.html';">Web Development</a></h3>
+          <p>Custom websites with latest technologies.</p>
+        </div>
+        <div class="box">
+          <img src="/Images/App Design.jpg" alt="">
+          <h3><a href="#Login" onclick="window.location.href = '/App Development/App development.html';">App Development</a></h3>
+          <p>Cross-platform mobile apps for iOS & Android.</p>
+        </div>
+        <div class="box">
+          <img src="/Images/UXC design.jpg" alt="">
+          <h3><a href="#Login" onclick="window.location.href = '/ux/ux.html';">UI/UX Design</a></h3>
+          <p>Modern, clean and intuitive user interfaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us Section -->
+  <section id="why">
+    <div class="container">
+      <h2>Why Choose Us</h2>
+      <ul>
+        <li>✔ Experienced Team</li>
+        <li>✔ Affordable Pricing</li>
+        <li>✔ On-time Delivery</li>
+        <li>✔ 24/7 Support</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 We9 Technologies. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toggle Menu Script -->
+<script src="script.js"></script>
+</body>
+</html>
